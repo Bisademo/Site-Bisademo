@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactos — Bisademo</title>
+<meta name="description" content="Fale com a Bisademo: pedidos de orçamento, venda de madeira ou dúvidas gerais. Contacte-nos por telefone, email ou formulário.">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><img src="assets/logo.png" alt="Bisademo"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contactos.html" class="active">Contactos</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contactos.html" class="btn btn--outline">Pedir orçamento</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Início</a> / Contactos</div>
+    <h1>Fale connosco</h1>
+    <p class="lede">Tem madeira para vender ou precisa de comprar? Preencha o formulário ou contacte-nos diretamente — respondemos o mais rápido possível.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="eyebrow">Informação de contacto</div>
+      <h2>Estamos disponíveis</h2>
+
+      <div class="info-item">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h4>Morada</h4>
+          <p>Quinta da Profadeira, n.º 30, Pendilhe<br>3610 Vila Nova de Paiva, Viseu</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 4 7a2 2 0 0 1 2-2z"/></svg>
+        </div>
+        <div>
+          <h4>Telefone</h4>
+          <p><a href="tel:+351919418606">919 418 606</a> — Fernando Silva, CEO<br><a href="tel:+351913834433">913 834 433</a> — João Carvalho, COO</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:geral@bisademo.com">geral@bisademo.com</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div>
+          <h4>Horário</h4>
+          <p>Segunda a sexta-feira, 9h00 – 18h00</p>
+        </div>
+      </div>
+
+      <div class="map-embed" style="margin-top:26px;">
+        <iframe
+          src="https://www.google.com/maps?q=Quinta%20da%20Profadeira%2C%20Pendilhe%2C%20Vila%20Nova%20de%20Paiva&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Bisademo"></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="mt-0">Envie uma mensagem</h3>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-field">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option>Tenho madeira para vender</option>
+            <option>Quero comprar madeira</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Espécie, quantidade estimada e localização da parcela, se aplicável." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+        <p class="form-note">Ao submeter, o seu cliente de email abrirá com a mensagem pronta a enviar para geral@bisademo.com.</p>
+        <div id="form-status"></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-white.png" alt="Bisademo">
+        <p>Comércio de madeira — pinho, eucalipto e estilha. Sediados em Vila Nova de Paiva, distrito de Viseu.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="mailto:geral@bisademo.com">geral@bisademo.com</a></li>
+          <li><a href="tel:+351919418606">919 418 606</a></li>
+          <li>Quinta da Profadeira, n.º 30, Pendilhe<br>Vila Nova de Paiva, Viseu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Bisademo, Unipessoal Lda &middot; NIPC 516759949</span>
+      <span>Feito com dedicação em Viseu</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
